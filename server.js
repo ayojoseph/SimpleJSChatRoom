@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+var admin = require("firebase-admin");
+var serviceAccount = require("./servkey.json");
 var http = require("http");
 var server = http.Server(app);
 var port = process.env.PORT || 8080;
